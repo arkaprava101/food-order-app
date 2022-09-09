@@ -1,0 +1,16 @@
+.lists {
+  list-style: none;
+  width: 45%;
+  margin: 0 auto;
+  background-color: #f1f3f5;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  & > * {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+
+      border-bottom: 1px solid #ced4da;
+    }
+  }
+}

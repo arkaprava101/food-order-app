@@ -1,0 +1,23 @@
+.hero {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  background-color: #f1f3f5;
+  padding: 5rem;
+  margin-top: 10rem;
+  border-radius: 0.5rem;
+  box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.4);
+  & > * {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__heading {
+    color: #7950f2;
+    font-size: 2.8rem;
+  }
+  &__para {
+    color: #868e96;
+    font-size: 1.6rem;
+  }
+}

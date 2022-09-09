@@ -1,0 +1,38 @@
+.payment-details {
+  display: grid;
+  padding-right: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  &__heading,
+  &__price {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+
+  &__btns {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+    & > * {
+      display: inline-block;
+      border: none;
+      border-radius: 2rem;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #4263eb;
+      font-size: 1.6rem;
+      padding: 1rem 2rem;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: #748ffc;
+      }
+    }
+  }
+  &__btns,
+  &__price {
+    justify-self: end;
+  }
+}

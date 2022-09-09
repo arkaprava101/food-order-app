@@ -1,0 +1,23 @@
+.cart-orders {
+  width: 50%;
+  min-height: 20vh;
+  background-color: #e9ecef;
+  border-radius: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  padding: 2rem 1rem;
+  & > * {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+.no-item {
+  color: #495057;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}

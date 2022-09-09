@@ -1,0 +1,48 @@
+.lists__item {
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  &--name {
+    text-transform: capitalize;
+  }
+  &--details {
+    color: #adb5bd;
+  }
+  &--price {
+    color: #91a7ff;
+  }
+}
+.add-item {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: repeat(2, 50%);
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+  align-items: center;
+  &__btn {
+    display: inline-block;
+    grid-column: 1/-1;
+    justify-self: center;
+    background-color: #364fc7;
+    padding: 0.5rem 3rem;
+    color: #fff;
+    font-size: inherit;
+    border: none;
+    border-radius: 0.5rem;
+    &:hover {
+      cursor: pointer;
+      background-color: #5c7cfa;
+    }
+  }
+  &__qt {
+    justify-self: start;
+    width: 50%;
+    padding: 0.25rem 0 0.25rem 0.25rem;
+  }
+  &__label {
+    font-weight: 700;
+    justify-self: end;
+  }
+}
